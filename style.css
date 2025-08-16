@@ -119,7 +119,6 @@ body.light .card {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
-
 body.light .card p {
   color: #333;
 }
@@ -134,7 +133,6 @@ body.light .card p {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-
 .btn:hover {
   background: #ccc;
 }
@@ -150,7 +148,6 @@ body.light .card p {
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
-
 body.light .about-card {
   background: #fff;
   border: 1px solid #ccc;
@@ -165,29 +162,30 @@ body.light .about-card {
   gap: 0.5rem;
 }
 
-.about-card p {
-  color: #ccc;
-}
-body.light .about-card p {
-  color: #333;
-}
-
 .about-card ul {
   list-style: none;
   padding: 0;
   margin-top: 0.5rem;
 }
-
 .about-card li {
   margin: 0.5rem 0;
   font-size: 0.95rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #aaa;
+  color: inherit;
 }
-body.light .about-card li {
-  color: #333;
+
+/* Skills icons (keep colored always) */
+.skills li i {
+  font-size: 1.4rem;
+}
+.skills li {
+  color: inherit;
+}
+.skills li .colored {
+  color: inherit;
+  filter: none !important;
 }
 
 /* Glow Effect */
@@ -209,7 +207,6 @@ body.light .about-card li {
   0%, 100% { transform: scale(1); opacity: 0.1; }
   50% { transform: scale(1.2); opacity: 0.3; }
 }
-
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-50px); }
   to { opacity: 1; transform: translateY(0); }
