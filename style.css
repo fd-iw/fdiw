@@ -1,3 +1,4 @@
+/* General Styling */
 * {
   margin: 0;
   padding: 0;
@@ -10,24 +11,39 @@ body {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  padding: 2rem;
 }
 
 .container {
   text-align: center;
   position: relative;
   z-index: 2;
+  max-width: 1000px;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 8px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   animation: fadeDown 1.5s ease forwards;
   opacity: 0;
+}
+
+/* Section Titles */
+.section {
+  margin: 3rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 /* Cards */
@@ -60,8 +76,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.card h2 {
-  font-size: 1.5rem;
+.card h3 {
+  font-size: 1.4rem;
   margin: 0.5rem 0;
 }
 
@@ -84,6 +100,40 @@ body {
 
 .btn:hover {
   background: #ccc;
+}
+
+/* About Me Card */
+.about-card {
+  background: #111;
+  border: 1px solid #444;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem;
+  color: #fff;
+}
+
+.about-card p {
+  color: #ccc;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.about-card li {
+  margin: 0.5rem 0;
+  color: #aaa;
+  font-size: 0.95rem;
 }
 
 /* Glow Effect */
